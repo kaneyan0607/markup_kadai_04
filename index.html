@@ -4,52 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <title>googleの検索画面</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-                rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 
-<body　class="d-flex">
-    <div id="wrapper">
+<body>
     <header>
-        <ul>
-            <li><span>R</span></li>
-            <li>images</li>
-            <li>Gmail</li>
-        </ul>
+        <nav>
+            <ul class="header-nav">
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">images</a></li>
+                <li><a href="#"><span>R</span></a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <div class="logo">
-            <img src="logo/googlelogo_color_272x92dp.png">
-        </div>
-        <div class="logo2">
-            
-            <form method="get" action="#" class="search_container">
+        <a href="#"><img src="logo/googlelogo_color_272x92dp.png"></a>
+        <form>
+            <div class="search_container">
+                <i class="fas fa-search"></i>
                 <input type="text" class="search_box">
-                <input type="submit" value="&#xf002">
-            </form>
-        </div>
-        <div class="subbutton">
-            <label>
-                <button type="submit" class="push">Google 検索</button>
-            </label>
-            <label>
-                <button type="submit" class="push">i'm Feeling Lucky</button>
-            </label>
-            </p>
-        </div>
+            </div>
+            <input type="submit" class="push" value="Google 検索">
+            <input type="submit" class="push" value="i'm Feeling Lucky">
+        </form>
     </main>
     <footer>
-        <ul class="left">
-            <li>Advertising</li>
-            <li>Business</li>
-            <li>About</li>
+        <ul class="footer-nav">　　　
+            <li><a href="#">Advertising</a></li>　<!-- flexboxで左右に分ける -->
+            <li><a href="#">Business</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Settings</a></li>
         </ul>
-        <div class="right">
-            <li>Privacy</li>
-            <li>Terms</li>
-            <li>Settings</li>
-        </div>
     </footer>
-    </div>
 </body>
