@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+ul{
+  padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-nav li{
+    margin-right: 10px;
+    font-size: small;
+}
+
+.header-nav li a{
+    color: black;
+}
+
+.header-nav li span{
+    display: inline-block;
+    width: 23px;
+    border-radius: 50%;
+    background: skyblue;
+    text-align:center;
+    line-height: 23px;
+    color: white;
+    background-color: red;
+}
+
+main{
+    text-align: center;
+    margin-top: 170px;
+}
+
+.search_container{
+    box-sizing: border-box;
+    border: 1px solid #dfe1e5;
+    padding: 3px 10px;
+    border-radius: 24px;
+    height: 38px;
+    width: 482px;
+    margin: 0 auto;
+}
+
+.fa-search{
+    color: #777;
+    position: relative;
+    top: 3px;
+    cursor: pointer;
+}
+
+.search_box{ 
+    width: 400px;
+    padding: 6px;
+    font-size: 13px;
+    border: none;
+}
+
+.push{
+    cursor : pointer;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 3px;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 16px;
+    margin: 20px 10px 0px 0px;
+    color: #5F6368;
+    font-size: 14px;
+  }
+
+  footer{
+    background-color:  #f2f2f2;
+    position: fixed; /* フッターを固定する */
+    bottom: 0; /* 上部から配置の基準位置を決める */
+    left: 0; /* 左から配置の基準位置を決める */
+    width: 100%;
+  }
+
+  .footer-nav{
+      display: flex;
+      font-size: small;
+      line-height: 25px;
+      margin-right: 20px;
+
+  }
+
+  .footer-nav a{
+    color: #5F6368;
+    padding-right: 13px;
+  }
+
+  .footer-nav li :hover{
+    text-decoration: underline;
+  }
+
+  .footer-nav li:nth-child(4){
+    margin-left: auto;
+  }
