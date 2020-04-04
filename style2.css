@@ -1,15 +1,25 @@
 @charset "utf-8";
 
+body{
+    min-width: 100%;
+    margin: 0;
+}
+
 ul{
   padding: 0;
+  margin: 0;
 }
 
 li{
     list-style: none;
 }
 
-li a{
+a{
     text-decoration: none;
+}
+
+header{
+    margin-top: 10px;
 }
 
 .header-nav{
@@ -19,27 +29,27 @@ li a{
 
 .header-nav li{
     margin-right: 10px;
-    font-size: small;
+    font-size: 13px;
 }
 
 .header-nav li a{
-    color: black;
+    color:#000;
 }
 
 .header-nav li span{
     display: inline-block;
     width: 23px;
     border-radius: 50%;
-    background: skyblue;
     text-align:center;
     line-height: 23px;
-    color: white;
-    background-color: red;
+    color: #fff;
+    background-color: #FF0000;
 }
 
 main{
     text-align: center;
-    margin-top: 170px;
+    position: relative;
+    top: 120px;
 }
 
 .search_container{
@@ -81,27 +91,23 @@ main{
 
   footer{
     background-color:  #f2f2f2;
-    position: fixed; /* フッターを固定する */
-    bottom: 0; /* 上部から配置の基準位置を決める */
-    left: 0; /* 左から配置の基準位置を決める */
-    width: 100%;
+    position: absolute;
+    bottom: 0;
+    min-width: 100%;
   }
 
   .footer-nav{
       display: flex;
-      font-size: small;
-      line-height: 25px;
-      margin-right: 20px;
-
+      font-size: 13px;
+      padding: 13px;
   }
 
   .footer-nav a{
     color: #5F6368;
-    padding-right: 13px;
   }
 
-  .footer-nav li :hover{
-    text-decoration: underline;
+  .footer-nav li{
+    margin-right: 13px;
   }
 
   .footer-nav li:nth-child(4){
