@@ -19,7 +19,7 @@ a{
 }
 
 header{
-    margin-top: 10px;
+    margin: 20px 15px 0px 0px;
 }
 
 .header-nav{
@@ -65,7 +65,7 @@ main{
 .fa-search{
     color: #777;
     position: relative;
-    top: 3px;
+    top: 2px;
     cursor: pointer;
 }
 
@@ -74,6 +74,10 @@ main{
     padding: 6px;
     font-size: 13px;
     border: none;
+}
+
+.search_box:focus{
+    outline:0;
 }
 
 .push{
